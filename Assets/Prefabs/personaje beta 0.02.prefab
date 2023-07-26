@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 622534785550430000}
   - component: {fileID: 3201934851661023388}
   - component: {fileID: 7351253296819450163}
+  - component: {fileID: 217342339}
   m_Layer: 0
   m_Name: personaje beta 0.02
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4835760260132547160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0247, y: -1.9817, z: 0}
-  m_LocalScale: {x: 0.28, y: 0.28, z: 1}
+  m_LocalPosition: {x: 0.0154, y: -1.86, z: 0}
+  m_LocalScale: {x: 0.30240002, y: 0.28, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,7 +107,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &7351253296819450163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -133,3 +134,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.734375, y: 13.078125}
   m_EdgeRadius: 0
+--- !u!114 &217342339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4835760260132547160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4001470bc5ed94298c899f1ff8357b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalMove: 0
+  verticalMove: 0
+  runSpeedHorizontal: 3
+  runSpeedVertical: 3
+  runSpeed: 1
+  joystick: {fileID: 0}
