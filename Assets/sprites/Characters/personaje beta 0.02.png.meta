@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2ee907109f1155b46aa55d84ad10a4b6
+guid: 2ccc3b9c20c95c54f8e3c9dbfd3b233a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -120,10 +120,10 @@ TextureImporter:
       name: personaje beta 0.02
       rect:
         serializedVersion: 2
-        x: 160
-        y: 33
-        width: 456
-        height: 1002
+        x: 82
+        y: 0
+        width: 431
+        height: 837
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,29 +131,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfc598f5d3502b14ab0c0d8b7f226ae4
-      internalID: -467982292
+      spriteID: 889c89aa7c31048448bb18fec7a0bd5c
+      internalID: 1998987463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: personaje beta 0.02_0
+      name: personaje beta 0.04_0
       rect:
         serializedVersion: 2
-        x: 264
-        y: 764
-        width: 243
-        height: 271
+        x: 234
+        y: 622
+        width: 179
+        height: 215
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58d28d2f231d84848a12cc076ac77a2d
-      internalID: -2060090155
+      spriteID: 844c4850ced20724383149134ccb9cbd
+      internalID: -2004490289
       vertices: []
       indices: 
       edges: []
@@ -169,8 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      personaje beta 0.02: -467982292
-      personaje beta 0.02_0: -2060090155
+      personaje beta 0.02: 1998987463
+      personaje beta 0.04_0: -2004490289
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
