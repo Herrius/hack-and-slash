@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 38
+  controlID: 78
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 18
+  controlID: 40
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Zoom: 0.6164062
   m_ScrollPosition: {x: 21.351097, y: -7.2745676}
   m_SelectedObject: {fileID: 0}
-  m_SelectedSpriteRectGUID: 84f2cb613f1fb924a84eb8e16b732094
+  m_SelectedSpriteRectGUID: 00000000000000000000000000000000
   m_LastUsedModuleTypeName: UnityEditor.U2D.Animation.SkinningModule
 --- !u!114 &13
 MonoBehaviour:
@@ -485,21 +485,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 3e600000
     m_LastClickedID: 24638
-    m_ExpandedIDs: 000000009c5f000008600000166000008660000000ca9a3b
+    m_ExpandedIDs: 00000000a05f0000a25f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Sounds
-      m_OriginalName: Sounds
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 24596
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -513,7 +513,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009c5f0000
+    m_ExpandedIDs: 00000000a05f0000a25f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -643,23 +643,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e4630000
-      m_LastClickedID: 25572
-      m_ExpandedIDs: f6c8ffff12c9ffff2ec9ffff36c9ffff3ac9ffff3ec9ffff46c9ffff4ec9ffff56c9ffff5ac9ffff5ec9ffff76cbfffff6cbffff28cdfffff8e4ffffbcf7ffffdef8ffff2cfbffffd2630000e4630000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: dot  (1)
-        m_OriginalName: dot  (1)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 25582
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -952,7 +952,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 949.6875, y: 173.43782, z: 1.2631761}
     speed: 2
-    m_Value: {x: 935.6339, y: 163.65417, z: 1.3630862}
+    m_Value: {x: 949.6875, y: 173.43782, z: 1.2631761}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 232.01149
     speed: 2
-    m_Value: 222.02057
+    m_Value: 232.01149
   m_Ortho:
     m_Target: 1
     speed: 2
