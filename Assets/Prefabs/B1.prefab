@@ -254,8 +254,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.07935536e-10, y: -0.033163473}
-  m_Size: {x: 1.0000068, y: 1.438254}
+  m_Offset: {x: 0.010656615, y: -0.15286602}
+  m_Size: {x: 0.6450414, y: 1.6776571}
   m_Direction: 0
 --- !u!1 &1110501097164859147
 GameObject:
@@ -551,8 +551,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.2417206e-11, y: -0.012264573}
-  m_Size: {x: 1.0000001, y: 1.6280614}
+  m_Offset: {x: -0.015407899, y: -0.095045134}
+  m_Size: {x: 0.718459, y: 1.7936225}
   m_Direction: 0
 --- !u!1 &1110501097745876397
 GameObject:
@@ -650,15 +650,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316b11e617987274e95f20a815cbdb7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1110501097745876385}
-  horizontalMove: 0
-  verticalMove: 0
-  runSpeedHorizontal: 3
-  runSpeedVertical: 3
-  joystick: {fileID: 0}
-  runSpeed: 2
-  jumpSpeed: 3
-  doubleJumpSpeed: 2.5
+  speed: 5
+  jumpForce: 5
+  groundCheck: {fileID: 0}
+  groundCheckRadius: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &8804585522785613130
 SpriteRenderer:
   m_ObjectHideFlags: 0

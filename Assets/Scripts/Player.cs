@@ -17,7 +17,7 @@ public class player : MonoBehaviour
     public Joystick joystick;
     public Animator animator;
     private Rigidbody2D playerRb;
-    public 
+
     void Start()
     {
         animator = GetComponent<Animator>();
