@@ -567,6 +567,7 @@ GameObject:
   - component: {fileID: 1110501097745876385}
   - component: {fileID: 1110501097745876386}
   - component: {fileID: 8804585522785613130}
+  - component: {fileID: 37027563587790801}
   m_Layer: 7
   m_Name: B1
   m_TagString: Untagged
@@ -650,13 +651,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316b11e617987274e95f20a815cbdb7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 5
-  groundCheck: {fileID: 0}
-  groundCheckRadius: 0
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
+  runSpeedHorizontal: 3
+  runSpeedVertical: 3
+  runSpeed: 1.25
+  jumpSpeed: 3
+  doubleJumpSpeed: 2.5
+  joystick: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!212 &8804585522785613130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -709,6 +710,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &37027563587790801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110501097745876397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f70f9e543a85f444810d6b29d78a19f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1110501097819475361
 GameObject:
   m_ObjectHideFlags: 0
