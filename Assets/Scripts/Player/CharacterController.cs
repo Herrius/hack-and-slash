@@ -44,7 +44,7 @@ public class CharacterController : MonoBehaviour
                 animator.SetFloat("Speed", 0);
             }
         }
-        if (CheckGround.isGrounded == false)
+        /*if (CheckGround.isGrounded == false)
         {
             //animator.SetBool("Jump", true);
             animator.SetBool("Run", false);
@@ -54,7 +54,7 @@ public class CharacterController : MonoBehaviour
             //animator.SetBool("Jump", false);
             //animator.SetBool("DoubleJump", false);
             //animator.SetBool("Falling", false);
-        }
+        }*/
 
     }
 
@@ -66,7 +66,7 @@ public class CharacterController : MonoBehaviour
         transform.position+=new Vector3(0,verticalMove, 0) * Time.deltaTime * jumpSpeed;
 
     }
-    public void Jump()
+    /*public void Jump()
     {
         if (CheckGround.isGrounded)
         {
@@ -82,5 +82,5 @@ public class CharacterController : MonoBehaviour
                 canDoubleJump = false;
             }
         }
-    }
+    }*/
 }
