@@ -11,7 +11,6 @@ public class MenuInicial : MonoBehaviour
     }
     public void Salir()
     {
-
         Application.Quit();
     }
 }

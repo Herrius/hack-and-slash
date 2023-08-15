@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterController : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class CharacterController : MonoBehaviour
 
     public float runSpeed = 1.25f;
     public float jumpSpeed = 3f;
+    public bool isAttacking = false;
 
+    public Button attackButton;
     public Joystick joystick;
     public Animator animator;
     private Rigidbody2D playerRb;
@@ -26,8 +29,11 @@ public class CharacterController : MonoBehaviour
         {
             animator.SetBool("Run", true);
             animator.SetFloat("Horizontal", horizontalMove);
-            animator.SetFloat("Vertical", verticalMove);
             animator.SetFloat("Speed", 1);
+            if(verticalMove > 0.5)
+            {
+                animator.SetFloat("Vertical", verticalMove);
+            }
         }
         else
         {
@@ -35,8 +41,11 @@ public class CharacterController : MonoBehaviour
             {
                 animator.SetBool("Run", true);
                 animator.SetFloat("Horizontal", horizontalMove);
-                animator.SetFloat("Vertical", verticalMove);
                 animator.SetFloat("Speed", 1);
+                if(verticalMove < -0.5)
+                {
+                    animator.SetFloat("Vertical", verticalMove);
+                }
             }
             else
             {
@@ -44,20 +53,15 @@ public class CharacterController : MonoBehaviour
                 animator.SetFloat("Speed", 0);
             }
         }
-        /*if (CheckGround.isGrounded == false)
+        if (CheckGround.isGrounded == false)
         {
-            //animator.SetBool("Jump", true);
             animator.SetBool("Run", false);
         }
         if (CheckGround.isGrounded == true)
         {
-            //animator.SetBool("Jump", false);
-            //animator.SetBool("DoubleJump", false);
-            //animator.SetBool("Falling", false);
-        }*/
-
+        }
+        ataque();
     }
-
     void FixedUpdate()
     {
         verticalMove = joystick.Vertical * runSpeedVertical;
@@ -66,21 +70,18 @@ public class CharacterController : MonoBehaviour
         transform.position+=new Vector3(0,verticalMove, 0) * Time.deltaTime * jumpSpeed;
 
     }
-    /*public void Jump()
+    public void ataque()
     {
-        if (CheckGround.isGrounded)
+        if (attackButton.interactable && Input.GetButtonDown("Fire1"))
         {
-            canDoubleJump = true;
-            playerRb.velocity = new Vector2(playerRb.velocity.x, jumpSpeed);
+            isAttacking = true;
+            animator.SetBool("Attack", true);
         }
         else
         {
-            if (canDoubleJump)
-            {
-                animator.SetBool("DoubleJump", true);
-                playerRb.velocity = new Vector2(playerRb.velocity.x, doubleJumpSpeed);
-                canDoubleJump = false;
-            }
+            isAttacking = false;
+            animator.SetBool("Attack", false);
         }
-    }*/
+    }
+
 }
