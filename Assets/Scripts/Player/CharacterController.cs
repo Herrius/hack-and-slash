@@ -2,18 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player : MonoBehaviour
+public class CharacterController : MonoBehaviour
 {
-     private float horizontalMove = 0f;
-     private float verticalMove = 0f;
-     public float runSpeedHorizontal = 3f;
-     public float runSpeedVertical = 3f;
+    private float horizontalMove = 0f;
+    private float verticalMove = 0f;
+    public float runSpeedHorizontal = 3f;
+    public float runSpeedVertical = 3f;
 
     public float runSpeed = 1.25f;
-    public float jumpSpeed = 3;
-    public float doubleJumpSpeed = 2.5f;
+    public float jumpSpeed = 3f;
 
-    private bool canDoubleJump;
     public Joystick joystick;
     public Animator animator;
     private Rigidbody2D playerRb;
@@ -58,18 +56,6 @@ public class player : MonoBehaviour
             //animator.SetBool("Falling", false);
         }
 
-
-        /*if(playerRb.velocity.y < 0)
-        {
-            animator.SetBool("Falling", true);
-        }
-        else
-        {
-            if (playerRb.velocity.y > 0)
-            {
-                animator.SetBool("Falling", false);
-            }
-        }*/
     }
 
     void FixedUpdate()
@@ -77,6 +63,7 @@ public class player : MonoBehaviour
         verticalMove = joystick.Vertical * runSpeedVertical;
         horizontalMove = joystick.Horizontal * runSpeedHorizontal;
         transform.position+=new Vector3(horizontalMove,0, 0) * Time.deltaTime * runSpeed;
+        transform.position+=new Vector3(0,verticalMove, 0) * Time.deltaTime * jumpSpeed;
 
     }
     public void Jump()
