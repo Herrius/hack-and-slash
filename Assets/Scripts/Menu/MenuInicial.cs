@@ -13,4 +13,8 @@ public class MenuInicial : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Volver()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 }
